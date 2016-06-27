@@ -1,1 +1,2 @@
-1. vimをフル機能版のvim-enahncedもしくはadvancedに変更し、シンボリックリンクをviに対して作成する。
+1. vimをフル機能版のvim-enhancedをインストールする。
+2. viのシンボリックリンクをvim-tiny,minimalからvim-enhancedへ変更する。
