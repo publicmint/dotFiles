@@ -1,4 +1,5 @@
 1. vimをフル機能版のvim-enhancedをインストールする。
 2. viのシンボリックリンクをvim-tiny,minimalからvim-enhancedへ変更する。
-3. dein.install.shを実行する。
-4. 各ディレクトリを配置する。
+3. 各ディレクトリを配置する。
+4. dein.install.shを実行する。
+
