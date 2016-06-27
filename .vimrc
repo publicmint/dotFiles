@@ -23,9 +23,9 @@
 	set termencoding=utf-8 "vimのコマンド入力などに利用される文字コード
 	"set encoding=utf-8 " デフォルトのエンコード
 	set fileencoding=utf-8 " ファイルのデフォルトのエンコード
-	set backup " バックアップを有効にする
-	set backupdir=~/.vim_backups/ "バックアップファイル保存場所の指定
-	set directory=~/.vim_backups/ "スワップファイルの保存場所の指定
+	"set backup " バックアップを有効にする
+	"set backupdir=~/.vim_backups/ "バックアップファイル保存場所の指定
+	"set directory=~/.vim_backups/ "スワップファイルの保存場所の指定
 	set autoread " ファイル変更があった場合に自動再読み込み
 	"行末の半角スペースをハイライト
 	augroup HighlightTrailingSpaces
