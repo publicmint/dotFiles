@@ -1,11 +1,13 @@
  " Note: Skip initialization for vim-tiny or vim-small.
-if has('vim_starting')
+ if !1 | finish | endif
+
+ if has('vim_starting')
    if &compatible
      set nocompatible               " Be iMproved
    endif
 
    " Required:
-   set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
  endif
 	set wildmenu " ナビゲーションバー有効
 	set autoindent " 自動インデントの有効
@@ -32,35 +34,41 @@ if has('vim_starting')
 				  autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
     augroup END
  " Required:
- call dein#begin(expand('~/.cache/dein/'))
+ call neobundle#begin(expand('~/.vim/bundle/'))
 
- call dein#add('scrooloose/nerdtree')
- nnoremap <silent><C-e> :NERDTreeToggle<CR>
- call dein#add('w0ng/vim-hybrid')
- call dein#add('tpope/vim-surround')
-" call dein#add('scrooloose/syntastic')
- call dein#add('Shougo/unite.vim')
- call dein#add('altercation/vim-colors-solarized')
+ " Let NeoBundle manage NeoBundle
+ " Required:
+ NeoBundleFetch 'Shougo/neobundle.vim'
+ "NeoBundleFetch 'https://github.com/mbrochh/vim-as-a-python-ide'
 
- call dein#end()
+ " My Bundles here:
+ " Refer to |:NeoBundle-examples|.
+ " Note: You don't set neobundle setting in .gvimrc!
+ "
+ NeoBundle 'scrooloose/nerdtree'
+ "NeoBundle 'w0ng/vim-hybrid'
+ "NeoBundle 'Shougo/unite'
 
-"プラグインの自動インストール
-if has('vim_starting') && dein#check_install()
-     call dein#install()
-endif
+ call neobundle#end()
 
  " Required:
  filetype plugin indent on
+
+ " If there are uninstalled bundles found on startup,
+ " this will conveniently prompt you to install them.
+ NeoBundleCheck
+
 
 hi LinerNr ctermbg=0 ctermfg=0
 
 "カラースキーマ設定
 "colorscheme summerfruit256
-"colorscheme solarized
-"colorscheme gruvbox
 "colorscheme hybrid
-colorscheme jellybeans
 
+"syntax enable
+"set background=dark
+"colorscheme solarized
+
+colorscheme gruvbox
 set background=dark
-
 syntax on
