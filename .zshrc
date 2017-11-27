@@ -1,4 +1,4 @@
-HOST=2pi_Oita
+HOST=`hostname`
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=100000
