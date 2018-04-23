@@ -49,6 +49,8 @@ if has('vim_starting')
  call dein#add('Shougo/vimshell.vim')
  call dein#add('davidhalter/jedi-vim')
  call dein#add('altercation/solarized', { 'script_type': 'colors' })
+ call dein#add('morhetz/gruvbox', { 'script_type': 'colors' })
+ call dein#add('Shougo/deoplete.nvim')
 
  call dein#end()
 
@@ -65,12 +67,12 @@ hi LinerNr ctermbg=0 ctermfg=0
 "カラースキーマ設定
 "colorscheme summerfruit256
 "colorscheme solarized
-"colorscheme gruvbox
+colorscheme gruvbox
 "colorscheme hybrid
 "colorscheme jellybeans
 "colorscheme 256-jungle
 "colorscheme molokai
-colors solarized
+"colors solarized
 
 
 set background=dark
