@@ -84,3 +84,4 @@ zplug load --verbose
 export LANG=ja_JP.UTF-8  # 文字コードをUTF- に設定
 export KCODE=u           # KCODEにUTF-8を設定
 export AUTOFEATURE=true  # autotestでfeatur を動かす
+export TERM=xterm-256color
