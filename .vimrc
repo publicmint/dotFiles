@@ -51,6 +51,7 @@ if has('vim_starting')
  call dein#add('altercation/solarized', { 'script_type': 'colors' })
  call dein#add('morhetz/gruvbox', { 'script_type': 'colors' })
  call dein#add('Shougo/deoplete.nvim')
+ call dein#add('chase/vim-ansible-yaml')
 
  call dein#end()
 
