@@ -1,0 +1,5 @@
+1. vimをフル機能版のvim-enhancedをインストールする。
+2. viのシンボリックリンクをvim-tiny,minimalからvim-enhancedへ変更する。
+3. 各ディレクトリを配置する。
+4. dein.install.shを実行する。
+5.  .bashrc or .zshrcに"export TERM=xterm-256color"を追加する。
