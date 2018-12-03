@@ -1,7 +1,9 @@
+### Encoding.
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 
+### Vim settings.
  " Note: Skip initialization for vim-tiny or vim-small.
 if has('vim_starting')
    if &compatible
@@ -37,6 +39,8 @@ if has('vim_starting')
 				  autocmd VimEnter,WinEnter * match TrailingSpaces /\s\+$/
     augroup END
  " Required:
+
+### Vim Plugins.
  call dein#begin(expand('~/.cache/dein/'))
 
  call dein#add('scrooloose/nerdtree')
@@ -44,7 +48,6 @@ if has('vim_starting')
  call dein#add('tpope/vim-surround')
  call dein#add('Shougo/unite.vim')
  call dein#add('elzr/vim-json')
-" call dein#add('Valloric/YouCompleteMe')
  call dein#add('Shougo/vimproc.vim')
  call dein#add('Shougo/vimshell.vim')
  call dein#add('davidhalter/jedi-vim')
@@ -68,7 +71,7 @@ hi LinerNr ctermbg=0 ctermfg=0
 "カラースキーマ設定
 "colorscheme summerfruit256
 "colorscheme solarized
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme hybrid
 "colorscheme jellybeans
 "colorscheme 256-jungle
@@ -76,7 +79,7 @@ colorscheme gruvbox
 "colors solarized
 
 
-set background=dark
+set background=light
 
 syntax on
 if executable('jq')
