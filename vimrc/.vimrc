@@ -1,9 +1,9 @@
-### Encoding.
+"### Encoding.
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
 
-### Vim settings.
+"### Vim settings.
  " Note: Skip initialization for vim-tiny or vim-small.
 if has('vim_starting')
    if &compatible
@@ -40,7 +40,7 @@ if has('vim_starting')
     augroup END
  " Required:
 
-### Vim Plugins.
+"### Vim Plugins.
  call dein#begin(expand('~/.cache/dein/'))
 
  call dein#add('scrooloose/nerdtree')
@@ -73,13 +73,13 @@ hi LinerNr ctermbg=0 ctermfg=0
 "colorscheme solarized
 "colorscheme gruvbox
 "colorscheme hybrid
-"colorscheme jellybeans
+colorscheme jellybeans
 "colorscheme 256-jungle
 "colorscheme molokai
 "colors solarized
 
 
-set background=light
+set background=dark
 
 syntax on
 if executable('jq')
