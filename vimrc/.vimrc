@@ -45,15 +45,8 @@ if has('vim_starting')
 
  call dein#add('scrooloose/nerdtree')
  nnoremap <silent><C-e> :NERDTreeToggle<CR>
- call dein#add('tpope/vim-surround')
- call dein#add('Shougo/unite.vim')
- call dein#add('elzr/vim-json')
- call dein#add('Shougo/vimproc.vim')
- call dein#add('Shougo/vimshell.vim')
- call dein#add('davidhalter/jedi-vim')
  call dein#add('altercation/solarized', { 'script_type': 'colors' })
  call dein#add('morhetz/gruvbox', { 'script_type': 'colors' })
- call dein#add('Shougo/deoplete.nvim')
  call dein#add('chase/vim-ansible-yaml')
 
  call dein#end()
@@ -68,7 +61,7 @@ endif
 
 hi LinerNr ctermbg=0 ctermfg=0
 
-"カラースキーマ設定
+"###カラースキーマ設定
 "colorscheme summerfruit256
 "colorscheme solarized
 "colorscheme gruvbox
